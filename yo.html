@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yo</title>
+    <style>
+        body{
+    background-color: bisque;
+            }    
+    h1{
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+    }
+    
+    </style>
+
+<body>
+
+    <h1>fechas importantes</h1>
+    <fieldset>
+        <label for="">Nombre<input type="text" id="txtnom" value="Robinson truque"></label><br><p></p>
+        <p></p>
+        <label for="">Fecha nacimiento<input type="datetime-local" id="txtfecha" value=""></label><br><p></p>
+        <p></p>
+        <label for="">Fecha bautiso:<input type="datetime-local" id="txtfechabautiso" value=""></label><br><p></p>
+        <p></p>
+        <label for="">Fecha confirmacio:<input type="datetime-local" id="txtfechaconfirmacion" value=""></label><br><p></p>
+        <p></p>
+        <label for="">Fecha matrimonio:<input type="datetime-local" id="txtfechamatrimonio" value=""></label><br>
+    </fieldset><br>
+    <fieldset>
+        <p id="nombre">nombre completo</p>
+        <p id="edad"> fecha de nacimiento</p>
+        <p id="bautiso" >fecha de bautiso</p>
+        <p id="confirmacion">fecha confirmacion</p>
+        <p id="matrimonio">fecha matrimonio</p>
+    </fieldset><br>
+    <fieldset>
+        <input type="button" value="nombre" 
+        onclick=document.getElementById(nombre(txtnom.value))>
+    
+        <input type="button" value="nacimiento" 
+        onclick=document.getElementById(nacimiento(txtfecha.value))>
+        
+        <input type="button" value="bautiso" 
+        onclick=document.getElementById(bautiso(txtfechabautiso.value))>
+        
+        <input type="button" value="confirmacio" 
+        onclick=document.getElementById(confirmacion(txtfechaconfirmacion.value))>
+        
+        <input type="button" value="matrimonio" 
+        onclick=document.getElementById(matrimonio(txtfechamatrimonio.value))> 
+    </fieldset>
+    <script src="yo1.js"></script>
+   
+</body>
+</html>
